@@ -79,6 +79,6 @@ public class FizzBuzzSolution {
     private boolean contains(Integer number, String numberToFind) {
     	String str = String.valueOf(number);
     	return str.indexOf(numberToFind) > -1 ? true : false;
-    }
+    } 
 
 }
