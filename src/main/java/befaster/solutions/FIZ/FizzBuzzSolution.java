@@ -2,11 +2,11 @@ package befaster.solutions.FIZ;
 
 public class FizzBuzzSolution {
 	
-	private static final String FIZZ = "Fizz";
-	private static final String BUZZ = "Buzz";
-	private static final String FIZZ_BUZZ = "FizzBuzz";
+	private static final String FIZZ = "fizz";
+	private static final String BUZZ = "buzz";
+	private static final String FIZZ_BUZZ = "fizz buzz";
 
-    public String fizzBuzz(Integer number) {
+    public String fizz_buzz(Integer number) {
         if (isMultipliedBy3And5(number)) {
         	return FIZZ_BUZZ;
         } else if (isMultipliedBy3(number)) {
