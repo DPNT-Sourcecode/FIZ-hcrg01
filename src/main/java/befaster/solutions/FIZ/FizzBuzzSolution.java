@@ -1,11 +1,35 @@
 package befaster.solutions.FIZ;
 
-import befaster.runner.SolutionNotImplementedException;
+import java.util.stream.IntStream;
 
 public class FizzBuzzSolution {
+	
+	private static final String FIZZ = "Fizz";
+	private static final String BUZZ = "Buzz";
+	private static final String FIZZ_BUZZ = "FizzBuzz";
 
     public String fizzBuzz(Integer number) {
-        throw new SolutionNotImplementedException();
+        if (isMultipliedBy3(number)) {
+        	return FIZZ;
+        } else if (isMultipliedBy5(number)) {
+        	return BUZZ;
+        } else if (isMultipliedBy3And5(number)) {
+        	return FIZZ_BUZZ;
+        } else {
+        	return String.valueOf(number);
+        }
+    }
+    
+    private boolean isMultipliedBy3(int number) {
+    	return number % 3 == 0;
+    }
+    
+    private boolean isMultipliedBy5(int number) {
+    	return number % 5 == 0;
+    }
+    
+    private boolean isMultipliedBy3And5(int number) {
+    	return number % (5 * 3) == 0;
     }
 
 }
