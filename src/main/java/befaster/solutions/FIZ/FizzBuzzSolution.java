@@ -4,10 +4,16 @@ public class FizzBuzzSolution {
 	
 	private static final String FIZZ = "fizz";
 	private static final String BUZZ = "buzz";
+	private static final String DELUXE = "deluxe";
 	private static final String FIZZ_BUZZ = "fizz buzz";
+	private static final String FIZZ_BUZZ_DELUXE = "fizz buzz deluxe";
 
     public String fizzBuzz(Integer number) {
-        if (isFizzBuzz(number)) {
+    	if(isFizzBuzzDeluxe(number)) {
+    		return FIZZ_BUZZ_DELUXE;
+    	} else if(isDeluxe(number)) {
+    		return DELUXE;
+    	} else if (isFizzBuzz(number)) {
         	return FIZZ_BUZZ;
         } else if (isFizz(number)) {
         	return FIZZ;
@@ -32,6 +38,10 @@ public class FizzBuzzSolution {
     
     private boolean isDeluxe(Integer number) {
     	return number > 10 && containsSameDigit(number);
+    }
+    
+    private boolean isFizzBuzzDeluxe(Integer number) {
+    	return isFizzBuzz(number) && isDeluxe(number);
     }
     
     private boolean containsSameDigit(Integer number) {
