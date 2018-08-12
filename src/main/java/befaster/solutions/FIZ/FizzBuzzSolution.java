@@ -19,18 +19,18 @@ public class FizzBuzzSolution {
     }
     
     private boolean isFizz(Integer number) {
-    	return number % 3 == 0 || contains(number, 3);
+    	return number % 3 == 0 || contains(number, "3");
     }
     
     private boolean isBuzz(Integer number) {
-    	return number % 5 == 0 || contains(number, 5);
+    	return number % 5 == 0 || contains(number, "5");
     }
     
     private boolean isFizzBuzz(Integer number) {
-    	return number % (5 * 3) == 0 || (contains(number, 3) && contains(number, 5));
+    	return number % (5 * 3) == 0 || (contains(number, "3") && contains(number, "5"));
     }
     
-    private boolean contains(Integer number, int numberToFind) {
+    private boolean contains(Integer number, String numberToFind) {
     	String str = String.valueOf(number);
     	return str.indexOf(numberToFind) > -1 ? true : false;
     }
