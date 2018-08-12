@@ -27,10 +27,6 @@ public class FizzBuzzSolution {
     		return FIZZ_DELUXE;
     	} else if(isBuzzDeluxe(number)) {
     		return BUZZ_DELUXE;
-    	} else if(isFakeDeluxe(number)) {
-    		return FAKE_DELUXE;
-    	} else if(isDeluxe(number)) {
-    		return DELUXE;
     	} else if (isFizzBuzz(number)) {
         	return FIZZ_BUZZ;
         } else if (isFizz(number)) {
@@ -71,7 +67,7 @@ public class FizzBuzzSolution {
     }
     
     private boolean isDeluxe(Integer number) {
-    	return number > 10 && containsSameDigit(number);
+    	return number > 10;
     }
     
     private boolean isFakeDeluxe(Integer number) {
