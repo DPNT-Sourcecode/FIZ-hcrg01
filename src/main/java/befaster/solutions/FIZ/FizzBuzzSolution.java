@@ -4,8 +4,6 @@ public class FizzBuzzSolution {
 	
 	private static final String FIZZ = "fizz";
 	private static final String BUZZ = "buzz";
-	private static final String DELUXE = "deluxe";
-	private static final String FAKE_DELUXE = "fake deluxe";
 	private static final String FIZZ_BUZZ = "fizz buzz";
 	private static final String FIZZ_DELUXE = "fizz deluxe";
 	private static final String FIZZ_FAKE_DELUXE = "fizz fake deluxe";
@@ -80,19 +78,6 @@ public class FizzBuzzSolution {
     
     private boolean isFizzBuzzFakeDeluxe(Integer number) {
     	return isFizzBuzz(number) && isFakeDeluxe(number);
-    }
-   
-    private boolean containsSameDigit(Integer number) {
-    	boolean deluxe = true;
-    	String str = String.valueOf(number);
-    	char first = str.charAt(0);
-    	for(int i = 1; i < str.length(); i++) {
-    		if(str.charAt(i) != first) {
-    			deluxe = false;
-    			break;
-    		}
-    	}
-    	return deluxe;
     }
     
     private boolean contains(Integer number, String numberToFind) {
