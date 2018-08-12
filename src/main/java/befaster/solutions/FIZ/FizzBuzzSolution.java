@@ -6,7 +6,7 @@ public class FizzBuzzSolution {
 	private static final String BUZZ = "buzz";
 	private static final String FIZZ_BUZZ = "fizz buzz";
 
-    public String fizz_buzz(Integer number) {
+    public String fizzBuzz(Integer number) {
         if (isMultipliedBy3And5(number)) {
         	return FIZZ_BUZZ;
         } else if (isMultipliedBy3(number)) {
