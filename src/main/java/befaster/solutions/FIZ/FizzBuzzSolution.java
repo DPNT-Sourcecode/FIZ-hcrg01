@@ -45,7 +45,7 @@ public class FizzBuzzSolution {
     }
     
     private boolean isFizzBuzz(Integer number) {
-    	return number % (5 * 3) == 0 || (isFizz(number) && isBuzz(number));
+    	return number % (5 * 3) == 0;
     }
     
     private boolean isFizzDeluxe(Integer number) {
@@ -53,7 +53,7 @@ public class FizzBuzzSolution {
     }
     
     private boolean isFizzFakeDeluxe(Integer number) {
-    	return isFizz(number) && isFakeDeluxe(number);
+    	return isFizz(number) && contains(number, "3") && isOdd(number);
     }
     
     private boolean isBuzzDeluxe(Integer number) {
@@ -61,23 +61,19 @@ public class FizzBuzzSolution {
     }
     
     private boolean isBuzzFakeDeluxe(Integer number) {
-    	return isBuzz(number) && isFakeDeluxe(number);
+    	return isBuzz(number) && contains(number, "5") && isOdd(number);
     }
-    
-    private boolean isDeluxe(Integer number) {
-    	return number > 10;
-    }
-    
-    private boolean isFakeDeluxe(Integer number) {
-    	return isDeluxe(number) && (number % 2 != 0);
+
+    private boolean isOdd(Integer number) {
+    	return number % 2 != 0;
     }
     
     private boolean isFizzBuzzDeluxe(Integer number) {
-    	return isFizzBuzz(number) && isDeluxe(number);
+    	return isFizzBuzz(number) && contains(number, "3") && contains(number, "5");
     }
     
     private boolean isFizzBuzzFakeDeluxe(Integer number) {
-    	return isFizzBuzz(number) && isFakeDeluxe(number);
+    	return isFizzBuzz(number) && contains(number, "3") && contains(number, "5") && isOdd(number);
     }
     
     private boolean contains(Integer number, String numberToFind) {
