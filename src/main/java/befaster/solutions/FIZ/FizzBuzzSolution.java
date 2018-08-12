@@ -73,7 +73,7 @@ public class FizzBuzzSolution {
     }
     
     private boolean isFizzBuzzFakeDeluxe(Integer number) {
-    	return isFizzBuzz(number) && contains(number, "3") && contains(number, "5") && isOdd(number);
+    	return isFizzBuzz(number) && (contains(number, "3") || contains(number, "5")) && isOdd(number);
     }
     
     private boolean contains(Integer number, String numberToFind) {
