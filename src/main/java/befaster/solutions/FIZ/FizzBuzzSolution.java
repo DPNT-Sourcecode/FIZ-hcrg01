@@ -27,7 +27,7 @@ public class FizzBuzzSolution {
     }
     
     private boolean isFizzBuzz(Integer number) {
-    	return number % (5 * 3) == 0 || (contains(number, "3") && contains(number, "5"));
+    	return number % (5 * 3) == 0 || (isFizz(number) && isBuzz(number));
     }
     
     private boolean contains(Integer number, String numberToFind) {
