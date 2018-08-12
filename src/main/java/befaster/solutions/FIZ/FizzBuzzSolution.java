@@ -66,6 +66,10 @@ public class FizzBuzzSolution {
     	return isBuzz(number) && isDeluxe(number);
     }
     
+    private boolean isBuzzFakeDeluxe(Integer number) {
+    	return isBuzz(number) && isFakeDeluxe(number);
+    }
+    
     private boolean isDeluxe(Integer number) {
     	return number > 10 && containsSameDigit(number);
     }
