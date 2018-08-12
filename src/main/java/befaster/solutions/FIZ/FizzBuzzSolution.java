@@ -5,6 +5,7 @@ public class FizzBuzzSolution {
 	private static final String FIZZ = "fizz";
 	private static final String BUZZ = "buzz";
 	private static final String DELUXE = "deluxe";
+	private static final String FAKE_DELUXE = "fake deluxe";
 	private static final String FIZZ_BUZZ = "fizz buzz";
 	private static final String FIZZ_DELUXE = "fizz deluxe";
 	private static final String BUZZ_DELUXE = "buzz deluxe";
@@ -52,6 +53,10 @@ public class FizzBuzzSolution {
     
     private boolean isDeluxe(Integer number) {
     	return number > 10 && containsSameDigit(number);
+    }
+    
+    private boolean isFakeDeluxe(Integer number) {
+    	return isDeluxe(number) && (number % 2 != 0);
     }
     
     private boolean isFizzBuzzDeluxe(Integer number) {
