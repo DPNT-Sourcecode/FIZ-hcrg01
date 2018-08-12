@@ -17,7 +17,7 @@ public class FizzBuzzSolutionTest {
 	
 	@Test
 	public void fizzBuzzTest() {
-		assertEquals("fizz deluxe", fizzBuzz.fizzBuzz(3));
+		assertEquals("fizz fake deluxe", fizzBuzz.fizzBuzz(3));
 		assertEquals("fizz fake deluxe", fizzBuzz.fizzBuzz(13));
 		assertEquals("buzz deluxe", fizzBuzz.fizzBuzz(5));
 		assertEquals("buzz", fizzBuzz.fizzBuzz(52));
