@@ -18,8 +18,11 @@ public class FizzBuzzSolutionTest {
 	@Test
 	public void fizzBuzzTest() {
 		assertEquals("fizz", fizzBuzz.fizzBuzz(3));
+		assertEquals("fizz", fizzBuzz.fizzBuzz(13));
 		assertEquals("buzz", fizzBuzz.fizzBuzz(5));
+		assertEquals("buzz", fizzBuzz.fizzBuzz(51));
 		assertEquals("fizz buzz", fizzBuzz.fizzBuzz(15));
+		assertEquals("fizz buzz", fizzBuzz.fizzBuzz(153));
 		assertEquals("2", fizzBuzz.fizzBuzz(2));
 	}
 }
