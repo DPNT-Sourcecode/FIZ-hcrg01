@@ -55,7 +55,7 @@ public class FizzBuzzSolution {
     }
     
     private boolean isFizzDeluxe(Integer number) {
-    	return isFizz(number) && isDeluxe(number);
+    	return number % 3 == 0 && contains(number, "3");
     }
     
     private boolean isFizzFakeDeluxe(Integer number) {
@@ -63,7 +63,7 @@ public class FizzBuzzSolution {
     }
     
     private boolean isBuzzDeluxe(Integer number) {
-    	return isBuzz(number) && isDeluxe(number);
+    	return number % 5 == 0 && contains(number, "5");
     }
     
     private boolean isBuzzFakeDeluxe(Integer number) {
