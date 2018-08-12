@@ -45,7 +45,7 @@ public class FizzBuzzSolution {
     }
     
     private boolean isFizzBuzz(Integer number) {
-    	return number % (5 * 3) == 0;
+    	return number % (5 * 3) == 0 || (isFizz(number) && isBuzz(number));
     }
     
     private boolean isFizzDeluxe(Integer number) {
