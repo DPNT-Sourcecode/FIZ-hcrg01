@@ -1,7 +1,5 @@
 package befaster.solutions.FIZ;
 
-import java.util.stream.IntStream;
-
 public class FizzBuzzSolution {
 	
 	private static final String FIZZ = "Fizz";
@@ -9,12 +7,12 @@ public class FizzBuzzSolution {
 	private static final String FIZZ_BUZZ = "FizzBuzz";
 
     public String fizzBuzz(Integer number) {
-        if (isMultipliedBy3(number)) {
+        if (isMultipliedBy3And5(number)) {
+        	return FIZZ_BUZZ;
+        } else if (isMultipliedBy3(number)) {
         	return FIZZ;
         } else if (isMultipliedBy5(number)) {
         	return BUZZ;
-        } else if (isMultipliedBy3And5(number)) {
-        	return FIZZ_BUZZ;
         } else {
         	return String.valueOf(number);
         }
