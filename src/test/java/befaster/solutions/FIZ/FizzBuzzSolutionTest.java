@@ -19,10 +19,10 @@ public class FizzBuzzSolutionTest {
 	public void fizzBuzzTest() {
 		assertEquals("fizz deluxe", fizzBuzz.fizzBuzz(3));
 		assertEquals("fizz", fizzBuzz.fizzBuzz(13));
-		assertEquals("buzz", fizzBuzz.fizzBuzz(5));
+		assertEquals("buzz deluxe", fizzBuzz.fizzBuzz(5));
 		assertEquals("buzz", fizzBuzz.fizzBuzz(52));
 		assertEquals("deluxe", fizzBuzz.fizzBuzz(22));
-		assertEquals("fizz buzz", fizzBuzz.fizzBuzz(15));
+		assertEquals("buzz deluxe", fizzBuzz.fizzBuzz(15));
 		assertEquals("fizz buzz", fizzBuzz.fizzBuzz(546));
 		assertEquals("fizz fake deluxe", fizzBuzz.fizzBuzz(33));
 		assertEquals("fizz deluxe", fizzBuzz.fizzBuzz(222));
