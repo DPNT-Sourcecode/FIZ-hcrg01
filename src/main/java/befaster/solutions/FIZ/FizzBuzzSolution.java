@@ -69,11 +69,11 @@ public class FizzBuzzSolution {
     }
     
     private boolean isFizzBuzzDeluxe(Integer number) {
-    	return number % (5 * 3) == 0 && contains(number, "3") && contains(number, "5");
+    	return number % (5 * 3) == 0 && (contains(number, "3") || contains(number, "5"));
     }
     
     private boolean isFizzBuzzFakeDeluxe(Integer number) {
-    	return number % (5 * 3) == 0 && contains(number, "3") && contains(number, "5") && isOdd(number);
+    	return isFizzBuzzDeluxe(number) && isOdd(number);
     }
     
     private boolean contains(Integer number, String numberToFind) {
